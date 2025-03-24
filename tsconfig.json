@@ -33,6 +33,6 @@
     "removeComments": true, // Remove comments in the output files
     "sourceMap": true // Generate source maps for debugging
   },
-  "include": ["src", "server/src", "src/seeds"], // Include the source files in the "src" directory
+  "include": ["client/src", "server/src", "server/src/seeds"], // Include the source files in the "src" directory
   "exclude": ["node_modules", "dist"] // Exclude the "node_modules" and "dist" directories
 }
