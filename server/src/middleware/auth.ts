@@ -1,10 +1,23 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 
-interface JwtPayload {
-  username: string;
-}
+export const authenticateToken = (req: Request, res: Response, next: NextFunction): void => {
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1];
 
-export const authenticateToken = (req: Request, res: Response, next: NextFunction) => {
-  // TODO: verify the token exists and add the user data to the request object
+  if (!token) {
+    res.status(401).json({ message: 'Access token is missing or invalid' });
+    return;
+  }
+
+  try {
+    const secretKey = process.env.JWT_SECRET_KEY || 'default_secret';
+    const decoded = jwt.verify(token, secretKey);
+
+    req.user = decoded as { username: string };
+    next();
+  } catch (error) {
+    res.status(403).json({ message: 'Invalid or expired token' });
+    return;
+  }
 };
