@@ -54,7 +54,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #444444;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -177,6 +177,10 @@ tbody tr:nth-child(odd) {
 #create-ticket-link {
   display: block;
   margin-left: auto;
+}
+
+#create-ticket-link a {
+  color: white;
 }
 
 
