@@ -25,7 +25,7 @@ const Navbar = () => {
       {
         !loginCheck ? (
           <li className='nav-item'>
-            <button type='button'>
+            <button type='button' id='login-button'>
               <Link to='/login'>Login</Link>
             </button>
           </li>

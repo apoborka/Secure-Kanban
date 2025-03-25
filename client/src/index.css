@@ -54,10 +54,16 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #444444;
+  background-color: #4e4e4e;
+  color: white;
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+button > a {
+  color: white;
+}
+
 button:hover {
   border-color: #646cff;
 }
@@ -106,6 +112,7 @@ tbody tr:nth-child(odd) {
 
 .nav-title a {
   color: #b864c4;
+  font-size: 2rem;
 }
 
 .nav-item {
@@ -177,6 +184,8 @@ tbody tr:nth-child(odd) {
 #create-ticket-link {
   display: block;
   margin-left: auto;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
 }
 
 #create-ticket-link a {
@@ -195,13 +204,20 @@ tbody tr:nth-child(odd) {
   align-items: center;
 }
 
+.form h1 {
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
 .form > h1, .form > label {
   color: yellow;
+  justify-content: center;
 }
 
 .form > input {
-  width: 200px;
-  
+  width: 220px;
+  height: 30px;
+  margin-bottom: 1rem;
 }
 
 .form > label {
@@ -215,23 +231,24 @@ tbody tr:nth-child(odd) {
 
 .form textarea {
   resize: both;
-  min-height: 30px;
-  min-width: 30px;
+  min-height: 80px;
+  min-width: 60px;
 }
 
 .editBtn {
-  background-color: #f9f9f9;
+  background-color: #cccccc;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-right: 1rem;
 }
 
 .deleteBtn {
-  background-color: #f9f9f9;
+  background-color: #e4449c;
   font-weight: 500;
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: inherit;
 }
 
