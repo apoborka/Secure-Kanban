@@ -21,13 +21,21 @@ Visit the URL:
 
 
 ## Usage
-The landing page will load the login component.
-![Candidate Search page]()
-Login using one of the pre-seeded user profiles:
-( JollyGuru | password )
-![Saved Candidates page]()
-From here, profiles can be reviewed and removed.
-If a candidate is of interest, use the displayed contact information to reach out for an opportunity to connect with your next potential hire!
+Visit the deployment URL (above) to navigate to the login page.
+Login using one of the pre-seeded user profiles.
+( Username: JollyGuru | Password: password )
+
+![Login Page screenshot](client\assets\LoginPage.jpg)
+
+Once logged in, view the Kanban board's pre-seeded tickets.
+These tickets may be edited or deleted as desired.
+To add a new ticket to the board, click "New Ticket".
+
+![Kanban board screenshot showing 3 columns: ToDo, In Progress, and Done](client\assets\KanbanBoard.jpg)
+
+The Create Ticket page contains fields for Ticket Name, Ticket Status (which lane the ticket will be placed into), Ticket Description, and a dropdown containing users (one of which can be attached to the ticket).
+
+![Create Ticket page](client\assets\CreateTicket.jpg)
 
 
 ## License
